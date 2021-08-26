@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="display">
+            <input type="text" name="text" id="display" disabled>
+        </div>
+        <div class="buttons">
+            <div class="row" id="row1">
+                <div class="col" id="col1"><button class="btn"
+                        onclick="document.getElementById('display').value+='7'">7</button></div>
+                <div class="col" id="col2"><button class="btn"
+                        onclick="document.getElementById('display').value+='8'">8</button></div>
+                <div class="col" id="col3"><button class="btn"
+                        onclick="document.getElementById('display').value+='9'">9</button></div>
+                <div class="col" id="col4"><button class="btn"
+                        onclick="document.getElementById('display').value+='+'">+</button></div>
+            </div>
+
+            <div class="row" id="row1">
+                <div class="col" id="col1"><button class="btn"
+                        onclick="document.getElementById('display').value+='4'">4</button></div>
+                <div class="col" id="col2"><button class="btn"
+                        onclick="document.getElementById('display').value+='5'">5</button></div>
+                <div class="col" id="col3"><button class="btn"
+                        onclick="document.getElementById('display').value+='6'">6</button></div>
+                <div class="col" id="col4"><button class="btn"
+                        onclick="document.getElementById('display').value+='-'">-</button></div>
+            </div>
+
+            <div class="row" id="row1">
+                <div class="col" id="col1"><button class="btn"
+                        onclick="document.getElementById('display').value+='1'">1</button></div>
+                <div class="col" id="col2"><button class="btn"
+                        onclick="document.getElementById('display').value+='2'">2</button></div>
+                <div class="col" id="col3"><button class="btn"
+                        onclick="document.getElementById('display').value+='3'">3</button></div>
+                <div class="col" id="col4"><button class="btn"
+                        onclick="document.getElementById('display').value+='*'">*</button></div>
+            </div>
+
+            <div class="row" id="row1">
+                <div class="col" id="col1"><button class="btn"
+                        onclick="document.getElementById('display').value+='0'">0</button></div>
+                <div class="col" id="col2"><button class="btn"
+                        onclick="document.getElementById('display').value=''">C</button></div>
+                <div class="col" id="col3"><button class="btn"
+                        onclick="document.getElementById('display').value+='/'">/</button></div>
+                <div class="col" id="col4"><button class="btn"
+                        onclick="document.getElementById('display').value=eval(display.value)">=</button></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
